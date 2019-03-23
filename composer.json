@@ -1,5 +1,5 @@
 {
-    "name": "asper/lang-excel-converter",
+    "name": "asperhsu/lang-excel-converter",
     "description": "Laravel localization import/export to excel converter",
     "license": "MIT",
     "authors": [
