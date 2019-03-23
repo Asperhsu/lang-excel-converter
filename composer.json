@@ -1,0 +1,44 @@
+{
+    "name": "asper/lang-excel-converter",
+    "description": "Laravel localization import/export to excel converter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asper",
+            "email": "asperwon@gmail.com",
+            "homepage": "https://github.com/asperhsu"
+        }
+    ],
+    "homepage": "https://github.com/asperhsu/lang-excel-converter",
+    "keywords": ["Laravel", "localization", "excel"],
+    "require": {
+        "illuminate/support": "~5",
+        "maatwebsite/excel": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asper\\LangExcelConverter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Asper\\LangExcelConverter\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Asper\\LangExcelConverter\\LangExcelConverterServiceProvider"
+            ],
+            "aliases": {
+                "LangExcelConverter": "Asper\\LangExcelConverter\\Facades\\LangExcelConverter"
+            }
+        }
+    }
+}
