@@ -1,3 +1,5 @@
+![](screenshot.png)
+
 # Lang Excel Converter
 
 Export localization to Excel. Each sheet is a group contains its' all locales translation.
