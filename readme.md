@@ -47,5 +47,23 @@ return Excel::download(new TranslationsExport, 'YOUR FILE NAME');
 
 more Excel Facade usage: [Maatwebsite/Laravel-Excel](https://laravel-excel.com/)
 
-### Demo Project
+## Demo Project
 [asperhsu/langexcelconverter-demo](https://github.com/asperhsu/langexcelconverter-demo)
+
+## Troubleshooting
+"SQLSTATE[HY000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES)" when import
+
+- publish excel config
+```php
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
+```
+- change config
+```php
+[
+    ...
+    'transactions' => [
+        'handler' => null,  // change 'db' to null
+    ],
+    ...
+]
+```
